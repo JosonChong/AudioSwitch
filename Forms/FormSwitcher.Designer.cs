@@ -41,6 +41,7 @@ namespace AudioSwitch.Forms
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.trayMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.volumeMixerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.audioDevicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +71,7 @@ namespace AudioSwitch.Forms
             this.trayMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem,
             this.audioDevicesToolStripMenuItem,
+            this.volumeMixerToolStripMenuItem,
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.trayMenu.Name = "trayMenu";
@@ -89,6 +91,13 @@ namespace AudioSwitch.Forms
             this.audioDevicesToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.audioDevicesToolStripMenuItem.Text = "Audio Devices";
             this.audioDevicesToolStripMenuItem.Click += new System.EventHandler(this.audioDevicesToolStripMenuItem_Click);
+            // 
+            // volumeMixerToolStripMenuItem
+            // 
+            this.volumeMixerToolStripMenuItem.Name = "volumeMixerToolStripMenuItem";
+            this.volumeMixerToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.volumeMixerToolStripMenuItem.Text = "Volume Mixer";
+            this.volumeMixerToolStripMenuItem.Click += new System.EventHandler(this.volumeMixerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -220,6 +229,7 @@ namespace AudioSwitch.Forms
         private LedBar ledRight;
         private ContextMenuStrip trayMenu;
         private ToolStripMenuItem settingsToolStripMenuItem;
+        private ToolStripMenuItem volumeMixerToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
         private ToolStripMenuItem audioDevicesToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator1;

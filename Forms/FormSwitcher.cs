@@ -627,5 +627,33 @@ namespace AudioSwitch.Forms
         {
             Process.Start(Environment.ExpandEnvironmentVariables("%WinDir%") + "\\Sysnative\\rundll32.exe", "Shell32.dll,Control_RunDLL Mmsys.cpl,,0");
         }
+
+        private void volumeMixerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("sndvol.exe");
+        }
+
+        private void muteButton_Click(object sender, EventArgs e)
+        {
+            //// Mute or unmute the system volume
+            //var audioEndpointVolume = GetDefaultAudioEndpointVolume();
+            //if (audioEndpointVolume != null)
+            //{
+            //    audioEndpointVolume.Mute = !audioEndpointVolume.Mute; // Toggle mute status
+            //    if (audioEndpointVolume.Mute)
+            //    {
+            //        muteButton.Text = "Unmute"; // Change button text to indicate unmute state
+            //    }
+            //    else
+            //    {
+            //        muteButton.Text = "Mute"; // Change button text to indicate mute state
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Could not access system volume.");
+            //}
+        }
+
     }
 }
