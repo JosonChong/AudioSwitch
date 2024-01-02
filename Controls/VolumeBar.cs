@@ -63,7 +63,7 @@ namespace AudioSwitch.Controls
             handleTip.SetToolTip(Thumb, "Master Volume");
         }
 
-        private void ChangeMute()
+        public void ChangeMute()
         {
             Mute = !Mute;
             Device.AudioEndpointVolume.Mute = Mute;

@@ -53,7 +53,7 @@ namespace AudioSwitch.Controls
         public LedBar()
         {
             InitializeComponent();
-            LED = new[] { new Label(), led1, led2, led3, led4, led5, led6, led7, led8, led9, led10, led11, led12, led13 };
+            LED = new[] { new Label(), led1, led2, led3, led4, led5, led6, led7, led8, led9, led10, led11, led12, led13, led14, led15, led16, led17, led18, led19, led20 };
         }
 
         internal void SetValue(float value)
@@ -63,10 +63,10 @@ namespace AudioSwitch.Controls
             lastValue = val;
 
             if (_oldStyle)
-                for (var i = 0; i < 14; i++)
+                for (var i = 0; i < 21; i++)
                     LED[i].BackColor = val >= i ? pgOnColors[i] : pgOffColors[i];
             else
-                for (var i = 0; i < 14; i++)
+                for (var i = 0; i < 21; i++)
                     LED[i].BackColor = val >= i ? Color.Gray : Color.Gainsboro;
         }
     }

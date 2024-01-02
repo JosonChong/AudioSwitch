@@ -468,6 +468,8 @@ namespace AudioSwitch.Forms
             VolBar.Top = pictureItemsBack.Top + pictureItemsBack.Height/2 - VolBar.Height/2;
             ledLeft.Top = VolBar.Top - ledLeft.Height - 1;
             ledRight.Top = VolBar.Top + VolBar.Height + 1;
+            MuteButton.Top = VolBar.Top - 6;
+            MuteButton.Left = VolBar.Left + VolBar.Width + 5;
             if (Program.settings.AlwaysVisible)
                 return;
 
@@ -635,25 +637,7 @@ namespace AudioSwitch.Forms
 
         private void muteButton_Click(object sender, EventArgs e)
         {
-            //// Mute or unmute the system volume
-            //var audioEndpointVolume = GetDefaultAudioEndpointVolume();
-            //if (audioEndpointVolume != null)
-            //{
-            //    audioEndpointVolume.Mute = !audioEndpointVolume.Mute; // Toggle mute status
-            //    if (audioEndpointVolume.Mute)
-            //    {
-            //        muteButton.Text = "Unmute"; // Change button text to indicate unmute state
-            //    }
-            //    else
-            //    {
-            //        muteButton.Text = "Mute"; // Change button text to indicate mute state
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Could not access system volume.");
-            //}
+            VolBar.ChangeMute();
         }
-
     }
 }

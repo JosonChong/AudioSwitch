@@ -43,7 +43,7 @@ namespace AudioSwitch.Controls
             this.lblGraph.Location = new System.Drawing.Point(-1, 1);
             this.lblGraph.Margin = new System.Windows.Forms.Padding(0);
             this.lblGraph.Name = "lblGraph";
-            this.lblGraph.Size = new System.Drawing.Size(196, 7);
+            this.lblGraph.Size = new System.Drawing.Size(146, 7);
             this.lblGraph.TabIndex = 11;
             this.lblGraph.Text = resources.GetString("lblGraph.Text");
             this.lblGraph.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,7 +74,7 @@ namespace AudioSwitch.Controls
             this.Controls.Add(this.Thumb);
             this.Controls.Add(this.lblGraph);
             this.Name = "VolumeBar";
-            this.Size = new System.Drawing.Size(195, 9);
+            this.Size = new System.Drawing.Size(145, 9);
             ((System.ComponentModel.ISupportInitialize)(this.Thumb)).EndInit();
             this.ResumeLayout(false);
 

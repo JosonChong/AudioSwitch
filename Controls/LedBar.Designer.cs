@@ -41,6 +41,13 @@
             this.led11 = new System.Windows.Forms.Label();
             this.led12 = new System.Windows.Forms.Label();
             this.led13 = new System.Windows.Forms.Label();
+            this.led14 = new System.Windows.Forms.Label();
+            this.led15 = new System.Windows.Forms.Label();
+            this.led16 = new System.Windows.Forms.Label();
+            this.led17 = new System.Windows.Forms.Label();
+            this.led18 = new System.Windows.Forms.Label();
+            this.led19 = new System.Windows.Forms.Label();
+            this.led20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // led1
@@ -147,10 +154,73 @@
             this.led13.Size = new System.Drawing.Size(14, 4);
             this.led13.TabIndex = 51;
             // 
+            // led14
+            // 
+            this.led14.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.led14.Location = new System.Drawing.Point(196, 1);
+            this.led14.Name = "led14";
+            this.led14.Size = new System.Drawing.Size(14, 4);
+            this.led14.TabIndex = 52;
+            // 
+            // led15
+            // 
+            this.led15.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.led15.Location = new System.Drawing.Point(211, 1);
+            this.led15.Name = "led15";
+            this.led15.Size = new System.Drawing.Size(14, 4);
+            this.led15.TabIndex = 53;
+            // 
+            // led16
+            // 
+            this.led16.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.led16.Location = new System.Drawing.Point(226, 1);
+            this.led16.Name = "led16";
+            this.led16.Size = new System.Drawing.Size(14, 4);
+            this.led16.TabIndex = 54;
+            // 
+            // led17
+            // 
+            this.led17.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.led17.Location = new System.Drawing.Point(241, 1);
+            this.led17.Name = "led17";
+            this.led17.Size = new System.Drawing.Size(14, 4);
+            this.led17.TabIndex = 55;
+            // 
+            // led18
+            // 
+            this.led18.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.led18.Location = new System.Drawing.Point(256, 1);
+            this.led18.Name = "led18";
+            this.led18.Size = new System.Drawing.Size(14, 4);
+            this.led18.TabIndex = 56;
+            // 
+            // led19
+            // 
+            this.led19.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.led19.Location = new System.Drawing.Point(271, 1);
+            this.led19.Name = "led19";
+            this.led19.Size = new System.Drawing.Size(14, 4);
+            this.led19.TabIndex = 57;
+            // 
+            // led20
+            // 
+            this.led20.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.led20.Location = new System.Drawing.Point(286, 1);
+            this.led20.Name = "led20";
+            this.led20.Size = new System.Drawing.Size(14, 4);
+            this.led20.TabIndex = 58;
+            // 
             // LedBar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.led20);
+            this.Controls.Add(this.led19);
+            this.Controls.Add(this.led18);
+            this.Controls.Add(this.led17);
+            this.Controls.Add(this.led16);
+            this.Controls.Add(this.led15);
+            this.Controls.Add(this.led14);
             this.Controls.Add(this.led13);
             this.Controls.Add(this.led12);
             this.Controls.Add(this.led11);
@@ -165,7 +235,7 @@
             this.Controls.Add(this.led2);
             this.Controls.Add(this.led1);
             this.Name = "LedBar";
-            this.Size = new System.Drawing.Size(196, 6);
+            this.Size = new System.Drawing.Size(301, 6);
             this.ResumeLayout(false);
 
         }
@@ -185,5 +255,12 @@
         private System.Windows.Forms.Label led11;
         private System.Windows.Forms.Label led12;
         private System.Windows.Forms.Label led13;
+        private System.Windows.Forms.Label led14;
+        private System.Windows.Forms.Label led15;
+        private System.Windows.Forms.Label led16;
+        private System.Windows.Forms.Label led17;
+        private System.Windows.Forms.Label led18;
+        private System.Windows.Forms.Label led19;
+        private System.Windows.Forms.Label led20;
     }
 }
