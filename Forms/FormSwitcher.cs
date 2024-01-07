@@ -632,7 +632,10 @@ namespace AudioSwitch.Forms
 
         private void volumeMixerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("sndvol.exe");
+            Point point = WindowPosition.GetWindowPosition(notifyIcon, 0, 0);
+            long position = (point.Y * 65536) + point.X;
+
+            Process.Start("sndvol.exe", "-t " + position);
         }
 
         private void muteButton_Click(object sender, EventArgs e)
